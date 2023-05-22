@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {CardArticle, ListArticle, TestComponent, FormDelivery} from './Components';
+import {ListArticles, TestComponent, FormDelivery} from './Components';
 import{
   BrowserRouter as Router,
   Routes,
@@ -10,9 +10,11 @@ import{
 
 const fakeDate =[
   {name : 'magarita', price : 25},
-  { name : '4 saisons', price : 32},
-  {name : 'magarita', price : 29},
-  { name : '4 saisons', price : 58}
+  {name : 'Regina', price : 32},
+  {name : 'magarita sans prix'},
+  {name : '4 saisons', price : 58},
+  {name : 'la spécial Luigi', price : 150},
+  {name : 'Calzone', price : 3000}
 ]
 let point = 0
 
@@ -30,7 +32,7 @@ function App() {
             Edit <code>src/App.js</code> and save to reload.
             <Routes>
               <Route path='/Delivery' element={<FormDelivery />}/>
-              <Route path='/List' element={<ListArticle articles={fakeDate}/>}/>
+              <Route path='/List' element={<ListArticles articles={fakeDate}/>}/>
               <Route path='/Test' element={<TestComponent functionClick={addSomePoint} points={point}/>}/>
               <Route path='/Pomme' element={<h1>Quel idée des pommes sur une pizza ?</h1>}/>
             </Routes>

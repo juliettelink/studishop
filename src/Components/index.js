@@ -1,11 +1,11 @@
 import CardArticle from "./CardArticle"
 import TestComponent from "./TestComponent"
-import ListArticle from "./ListArticle"
+import ListArticles from "./ListArticles"
 import FormDelivery from "./FormDelivery"
 
 export {
     CardArticle,
     TestComponent,
-    ListArticle,
+    ListArticles,
     FormDelivery
 }
